@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link href="/inventory.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/addproduct" method="post">
+
+        <label>
+           Product :
+        </label>
+        <input type="text" id="product-name" name="prod_name" required>
+
+        <label>
+           Description :
+        </label>
+        <input type="text" id="product-desc" name="prod_desc" required>
+
+        <label>
+           Price :
+        </label>
+        <input type="number" id="product-price" name="prod_price" required>
+       
+        <label>
+            Quantity :
+        </label>
+        <input type="number" i="product-qty" name="prod_qty" required>
+
+        <button type="click">
+           Add Product
+        </button>
+
+    </form>
+    <div id="products">
+        <ul id="prod-lists">
+
+        </ul>
+    </div>
+    <script src="inventory.js"></script>
+</body>
+</html>
